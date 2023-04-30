@@ -27,4 +27,16 @@ class ProductRepositoryTest {
         //sout
         System.out.println(savedProject.toString());
     }
+
+    @Test
+    void updateSaveMethod(){
+        int id=1;
+
+        Product product=productRepository.findById(id).get();
+        //update info
+        product.setPrice(new BigDecimal(95));
+
+        //save
+        productRepository.save(product);
+    }
 }
