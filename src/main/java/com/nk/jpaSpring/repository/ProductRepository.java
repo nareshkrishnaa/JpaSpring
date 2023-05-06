@@ -15,4 +15,11 @@ public List<Product> findByNameAndPrice(String name, BigDecimal price);
 
 public Product findDistinctByName(String name);
 public Product findDistinctByNameAndPrice(String name,BigDecimal price);
+public List<Product> findByPriceGreaterThan(BigDecimal price);
+public List<Product> findByPriceLessThan(BigDecimal price);
+public List<Product> findByNameContaining(String name);
+public List<Product> findByPriceBetween(BigDecimal p1,BigDecimal p2);
+public List<Product> findByNameIn(List<String> names);
+    public List<Product> findByNameAsc();
+
 }
